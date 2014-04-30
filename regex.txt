@@ -1,0 +1,4 @@
+Python is good
+Python is better
+Python is best
+One of the best scripting language is Python

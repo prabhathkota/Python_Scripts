@@ -1,0 +1,11 @@
+students = ["Paul Miller", "Kathy Jones", "Susan Smith", "John Doe", "James Black"]
+
+#raw_input() was renamed to input()
+another_student = input("Enter Student Name : ")
+
+if another_student in students:
+    students.remove(another_student)
+else:
+    students.append(another_student)
+	
+print(students)	
