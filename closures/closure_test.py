@@ -48,11 +48,14 @@ def enclosed_function(x):
 if __name__ == '__main__':
     print('------------------------------------------------------')
     outer_function('Hi Nested Function')
+    print('------------------------------------------------------')
     func_obj = closure_outer_function('Hi Closure')
+    print(func_obj.__closure__)  # str object text - (<cell at 0x108746b28: str object at 0x108791170>,)
     func_obj()
     print('------------------------------------------------------')
     func_obj = enclosed_function(100)
     print('After calling enclosed_function')
+    print(func_obj.__closure__)  # int object x - (<cell at 0x108746b58: int object at 0x108566d00>,)
     func_obj(111)
     print('------------------------------------------------------')
 
