@@ -1,7 +1,8 @@
 ######################################################
 # Decorators
 # use of functools.wraps
-# The @functools.wraps decorator uses the function functools.update_wrapper() to update special attributes
+# The @functools.wraps decorator uses the function functools.update_wrapper()
+# to update special attributes
 # like __name__ and __doc__ that are used in the introspection.
 ######################################################
 import functools
@@ -71,3 +72,8 @@ if __name__ == '__main__':
     print(test_decorator3_func.__doc__)      # test_decorator3_func documentation
     print(test_decorator3_func.__closure__)  # (<cell at 0x10344df18: function object at 0x1034e0d08>,)
     print('------------------------------------')
+
+
+
+
+
