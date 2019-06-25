@@ -1,7 +1,3 @@
-"""
-
-"""
-
 from .tasks import longtime_add
 import time
 
